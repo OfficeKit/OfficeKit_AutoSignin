@@ -85,7 +85,7 @@ emitter.on("online",function(arg){
 			Record.find({timestamp:{$gt:sptime},name:thisname,state:1},function(err,recs){
 				if(err){
 					console.log(err);
-				}else if(docs.recs == 0){
+				}else if(recs.length == 0){
 					insertRecord(thisname,1);	
 				}else{
 					console.log("already signin!");
