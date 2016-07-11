@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<table>
+		<form action="/addMac_act" method="POST">
+   			<input type="hidden" name="hush" val="hidden, but not secret!">
+   			<div>
+			<table>
+				</br>
+      				<tr>
+					<td><label for="fieldColor">请填入你的姓名: </label></td>
+     					<td><input type="text" id="fieldColor" name="name"></td>
+				</tr>
+				<tr>
+					<td><label for="fieldColor">请填入你手机的MAC地址: </label></td>
+                                	<td><input type="text" id="fieldColor" name="mac"></td>
+				</tr>
+				</br>
+				<tr>
+					<b>提示：请输入正确格式的MAC地址（用小写格式即可，例如：ab:2d:3f:2h:7j:l3）</b></br>
+					<b>安卓用户获取MAC地址：桌面 => 设置 => 关于本机 => 状态信息 => WLAN MAC地址。详情参见<a href="http://jingyan.baidu.com/article/3d69c551ae83c3f0cf02d7e9.html">这里</a></b></br>
+					<b>iOS用户获取MAC地址：桌面 => 设置 => 通用 => 关于本机 => 下拉 => 无线局域网地址。详情参见<a href="http://jingyan.baidu.com/article/2d5afd69f105b985a2e28e20.html">这里</a></b>
+				</tr>
+   			</table>
+			</div>
+			</br>
+   			<div>
+      				<button type="submit">提交</button>
+   			</div>
+		</form>
+	</table>
+	</br>
+	</br>
+	<table>
+	<b>目前统计共有：<%= umacs.length%> 人</b>
+	<% umacs.forEach(function(v,k){ %>
+                <tr>
+                        <td><span><%= v.name %></span></td>
+                        <td><span><%= v.mac %></span></td>
+                </tr>
+        <% })%>
+	</table>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<table>
+  	<% records.forEach(function(v,k){ %>
+		<tr>
+			<td><span><%= v.name %></span></td>
+			<td><span><%= v.state %></span></td>
+			<td><span><%= v.timestamp %></span></td>
+		</tr>
+	<% })%>
+	</table>
+  </body>
+</html>

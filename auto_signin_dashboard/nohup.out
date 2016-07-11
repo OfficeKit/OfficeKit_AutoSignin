@@ -1,0 +1,12 @@
+
+> auto_signin@0.0.0 start /root/officekit_dashboard/auto_signin
+> node ./bin/www
+
+
+> auto_signin@0.0.0 start /root/officekit_dashboard/auto_signin
+> node ./bin/www
+
+[0mGET / [36m304 [0m20.369 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.197 ms - -[0m
+[0mGET / [36m304 [0m3.120 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.640 ms - -[0m
